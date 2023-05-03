@@ -1,0 +1,64 @@
+
+body {
+    background-color: $DarkBlue;
+    text-align: center;
+
+    padding-inline: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        font-family: $ff;
+        font-size: $fontSize / 1.2;
+        color: $LightCyan;
+        background-color: $DarkGrayishBlue;
+        border-radius: 1rem;
+
+        padding: 1rem;
+
+        display: grid;
+        justify-items: center;
+
+        position: relative;
+
+        max-width: 420px;
+
+        .title {
+            color: $NeonGreen;
+            font-size: $fontSize / 2;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            padding-block: 1rem;
+        }
+
+        .advice-container {
+
+            .fa-solid {
+                font-size: 0.6rem;
+                transform: translateY(-0.6rem);
+                padding-inline: 0.1rem;
+            }
+        }
+
+        .pattern-container {
+            padding-block: 2rem 3rem;
+        }
+
+        .img-container {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(50%);
+            background-color: $NeonGreen;
+            padding: 1rem;
+            border-radius: 50%;
+
+            &:hover {
+                filter: drop-shadow(0 0 15px $NeonGreen);
+                cursor: pointer;
+            }
+        }
+    }
+}
